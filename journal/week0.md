@@ -14,6 +14,25 @@ To push code from Gitpod to Github, configure permission in Gitpod integrations 
 ![Gitpod permissions](assets/gitpod-github-permission-config.png)
 
 
+### Create Budget
+
+For demonstration purpose, created a $1 Budget & notification with subscribers.
+
+![Budget Alarm Creation](assets/Budget-alarm-creation-one-dollar.png)
+
+
+### SNS Topic subscription confirmation
+
+Using an email id, confirmed the SNS subscription.
+
+![SNS subscription confirmation](assets/budget-alarm-confirmed.png)
+
+
+### Logical Architecture Diagram Recreation
+
+![Cruddur Logical Architecture Diagram](assets/Cruddur%20Logical%20Architecture%20Diagram.png)
+
+[Lucid.app Commentable Link](https://lucid.app/lucidchart/e154493c-c29f-41ce-9115-52e6c5cdcf0d/edit?viewport_loc=-660%2C-736%2C2170%2C2660%2C0_0&invitationId=inv_320ccf60-b95c-4980-ae7b-8de775f06b3e)
 
 
 Having watched live stream video on 11th, and the videos thereafter, it became clear how to record homework.
@@ -48,8 +67,4 @@ Having watched live stream video on 11th, and the videos thereafter, it became c
 - This video covers the basics of creating and applying AWS IAM policies. The main points covered include setting up a policy, attaching a policy to an account, and deleting a policy. Additionally, the video discusses the difference between Global and Regional IAM policies, and provides an example of how to use IAM for compliance.
 
 
-### Logical Architecture Diagram Recreation
 
-![Cruddur Logical Architecture Diagram](assets/Cruddur%20Logical%20Architecture%20Diagram.png)
-
-[Lucid.app Commentable Link](https://lucid.app/lucidchart/e154493c-c29f-41ce-9115-52e6c5cdcf0d/edit?viewport_loc=-660%2C-736%2C2170%2C2660%2C0_0&invitationId=inv_320ccf60-b95c-4980-ae7b-8de775f06b3e)
