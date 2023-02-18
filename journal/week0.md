@@ -1,5 +1,21 @@
 # Week 0 — Billing and Architecture
 
+## Required Homework/Tasks
+
+### Install and Verify AWS CLI 
+
+Configured Gitpod environment to install aws cli everytime new environment is provisioned.
+
+![Gitpod configure with aws cli installation](assets/gitpod-yaml-with-aws-cli-configured.png)
+
+
+To push code from Gitpod to Github, configure permission in Gitpod integrations to allow it to push code to repo.
+
+![Gitpod permissions](assets/gitpod-github-permission-config.png)
+
+
+
+
 Having watched live stream video on 11th, and the videos thereafter, it became clear how to record homework.
 
 ### Watched [**Spend Considerations**](https://www.youtube.com/watch?v=OVw3RrlP-sI) video, here is a list of points video informs about:
@@ -36,4 +52,4 @@ Having watched live stream video on 11th, and the videos thereafter, it became c
 
 ![Cruddur Logical Architecture Diagram](assets/Cruddur%20Logical%20Architecture%20Diagram.png)
 
-
+[Lucid.app Commentable Link](https://lucid.app/lucidchart/e154493c-c29f-41ce-9115-52e6c5cdcf0d/edit?viewport_loc=-660%2C-736%2C2170%2C2660%2C0_0&invitationId=inv_320ccf60-b95c-4980-ae7b-8de775f06b3e)
