@@ -96,7 +96,7 @@
 - Cloud Watch 3 Dashboards, 50 Metrics, 10 Alarms, 5GB Data ingestion - can be very expensive
 
 
-### Security Considerations:
+## Security Considerations:
 - Logging comes into picture when something goes wrong, like site doesn't come up.
 - Depending upon the type of Cloud Service (Iaas, Paas or Saas) logging varies.
 - Logging sucks! Time consuming, needle in haystack, not for quick finding / analysis
@@ -115,8 +115,10 @@ Unless we dig deep into logs, we would not know why error occurred.
 Observability shows entire lifecycle of problem which we want to identify.
 What can we do to prevent issue form reoccurring.
 We have visibility on every process running.
-Break down an applcition into multiple proceeses & have an exact trace of where function is calling
+Break down an application into multiple proceeses & have an exact trace of where function is calling
 where it is traversing data, what kind of metrics should you look for
+
+![](assets/Monitoring_vs_Observability.png)
 
 
 ### 3 Pillars of Observability:
@@ -129,5 +131,57 @@ where it is traversing data, what kind of metrics should you look for
 - AWS CloudWatch Logs
 - AWS CloudWatch Metrics
 - AWS X Ray Traces
+
+![](assets/AWS_Observability_Triangle.jpeg)
+
+### Other AWS Services:
+
+- CloudTrail
+- CloudWatch Agent
+- CloudWatch Metrics
+- X Ray traces
+- AWS Private CA
+- AWS Certificate Manager
+- AWS Backup
+- Amazon Inspector
+- AWS KMS
+- AWS ECS Cluster auto scaling
+
+### To enable these services, we need Instrumentation
+Instrumentation helps create logs, traces, metrics
+
+![](assets/aws-observability.png)
+
+### Sending CloudTrail logs to CloudWatch
+- Adding Cloud Watch Logs in CloudTrail AWS console after creating a new trail or using existing one.
+- Enable Cloud Watch Logs - creates log group inside cloud watch, allows us to create metrics in cloud watch. We find log groups under logs.
+- We create a new Cloud Watch Logs using existing IAM Role by giving **Log group name** & **Role Name**.
+- Save Changes -> enables capability of cloud trail logs to start sending information to cloud watch.
+- Good for 2 reasons. If a hacker deletes cloud trail, or disable logging into CloudWatch or if a novice user deletes CloudTrail.
+- Metrics Filter using a pattern.
+- If you have an ec2 instance running with amazon images, which comes with a cloud watch agent which can be enabled and allows us to create a log group, then we can create mertics for it. e.g. 
+- 
+1. If security group is changed, an alarm should be raised if security group is open to internet. 
+2. Or if we create a storage bucket that is open to the internet.
+
+- Threat Modelling Exersize: Identify potential attack paths which may lead to compromise e.g. fishing e-mail, DDOS, malware etc. 
+- Refer to industry standards for techniques used by hackers.
+- Attack MITRE reports popular techniques among hackers.
+- Use it identify agents available for instrumentation. 
+- For instrumentation perspective we have CloudWatch agent, AWS Security Hub, SIEM Solutions
+
+
+Event Driven Security
+
+- Event Driven Architecture using Serverless 
+- Auto Remediation with Amazon EventBridge and AWS Security Hub 
+- AWS Services for Threat Detection - Amazon Guard Duty,3rd Party etc
+
+
+
+
+
+
+
 
 
