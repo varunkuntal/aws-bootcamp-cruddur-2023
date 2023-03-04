@@ -1,8 +1,8 @@
 # Week 2 — Distributed Tracing
 
-Watched week 2 Live stream and created notes with timestamps:
+## Week 2 Live stream notes with timestamps:
 
-Timestamps:
+### Timestamps:
 `00:00 Introduction`
 
 	- 00:42 AWS Ontario Virtual User Group
@@ -87,3 +87,47 @@ Timestamps:
 `1:51:01 Committing code for homework, tagging using git`
 
 `1:53:40 Homework Challenges discussion, new challenges over what is already done`
+
+## Spending Considerations:
+
+- Honeycomb 20M request per month free tier
+- Rollbar 5k request per month free with 30 Days retention
+- AWS X RAY - 100K traces free
+- Cloud Watch 3 Dashboards, 50 Metrics, 10 Alarms, 5GB Data ingestion - can be very expensive
+
+
+### Security Considerations:
+- Logging comes into picture when something goes wrong, like site doesn't come up.
+- Depending upon the type of Cloud Service (Iaas, Paas or Saas) logging varies.
+- Logging sucks! Time consuming, needle in haystack, not for quick finding / analysis
+- Observability decresed alert fatigue. 
+- Visibility of end2end logs, metrics & tracing.
+- Troubleshoot & resolve quickly at low costs.
+- Understand Health, accelerate collaboration between teams, 
+- Reduce operational costs, increase customer satisfaction.
+
+### Monitoring vs Observability
+
+In monitoring, e.g. it refreshes every 5 second & lets us know that if service is down, like a puppy.
+Problem is when application is complex, there is peripherals not seen like multiple applications to get log data,
+Unless we dig deep into logs, we would not know why error occurred.
+
+Observability shows entire lifecycle of problem which we want to identify.
+What can we do to prevent issue form reoccurring.
+We have visibility on every process running.
+Break down an applcition into multiple proceeses & have an exact trace of where function is calling
+where it is traversing data, what kind of metrics should you look for
+
+
+### 3 Pillars of Observability:
+
+- Logs: Every app produces logs
+- Metrics: Improvement over logs, enhance the logs being produced, metrics are created from logs
+- Traces: Trace back to exact pin point prolem that caused root problem.
+
+### AWS Observability Tools:
+- AWS CloudWatch Logs
+- AWS CloudWatch Metrics
+- AWS X Ray Traces
+
+
